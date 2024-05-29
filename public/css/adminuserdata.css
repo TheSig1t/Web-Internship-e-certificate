@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151f4f;
+}
+
+.container{
+    width: 95%;
+    min-height: auto;
+    max-height: none;
+    margin-left: 32px;
+    margin-top: 32px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.container table{
+    width: 100%;
+    max-height: 500px;
+    border-collapse: collapse;
+}
+.container table th{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.container table td{
+    text-align: center;
+    font-family: 'Noto sans', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 2px solid black;
+}
+.container table td button{
+    margin: -20px;
+    padding: 7px 14px 7px 14px;
+    border: 1px solid #151f4f;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #151f4f;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+.container table td button i{
+    margin-right: 5px;
+    transition: 0.4s ease-in;
+}
+#action{
+    margin-right: 40px;
+}
+.container table td button:hover{
+    background-color: #fff;
+    color:  #151f4f;
+    /* border: 1px solid black; */
+}
+/* .container table th, td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+} */
+@media screen and (max-width:725px) {
+    .container {
+        margin: auto;
+    }
+    .container table th{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .container table td{
+        font-size: 16px;
+    }
+    .container table td button{
+        margin: -7px;
+    }
+    #action{
+        margin-right: 15px;
+    }
+    #table-column{
+        display: none;
+    }
+}

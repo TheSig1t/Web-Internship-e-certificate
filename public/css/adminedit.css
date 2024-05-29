@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #003d47;
+}
+.login-box{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);  
+    background-color: #C4DFE6;
+    box-shadow: 0 10px 25px rgb(102, 165, 173);
+    border-radius: 10px;
+    z-index: -3;
+}
+/* .login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #151f4f;
+    text-align: center;
+} */
+.login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Noto Sans',sans-serif;
+    font-size: 15px;
+    color: #003B46;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px   solid #1E434C;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -82px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #1E434C;
+    font-family: 'Ubuntu',sans-serif;
+    -webkit-text-stroke-width: 0.5px;
+    /* -webkit-text-stroke-color: #D9B44A; */
+    /* pointer-events: none; */
+    /* transition: .5s; */
+}
+ #role{ 
+    top: -20px;
+}
+.wrapper{
+  display: inline-flex;
+  background: #07575be7;
+  height:auto;
+  width: 100%;
+  margin-top: -25px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 10px 5px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: rgb(102, 165, 173);
+  height: auto;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid #66A5AD;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 18px;
+  width: 18px;
+  background: #C4DFE6;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background: #003B46;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #003B46;
+  background: #003B46;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #C4DFE6;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 15px;
+  color: #07575B;
+  font-family:'Ubuntu',sans-serif;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #C4DFE6;
+}
+/* select{
+    position: relative;
+    display: block;
+    margin-top: -20px;
+    padding: 3px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid  #151f4f;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+ select option{
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: #151f4f;
+    color: #fff;
+    padding: 5px 55px 5px 55px;
+} */
+
+
+
+/* select:hover{
+    background-color: #151f4f;
+    color: #fff;
+} */
+/* .login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label{
+    top: -85px;
+    left: 0;
+    color: #151f4f;
+    font-size: 12px;
+} */
+#submit{
+    padding: 10px 20px;
+    color: #07575B;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 16px;
+    border-radius:5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #07575B;
+    margin: auto;
+}
+#submit:hover{
+    background: #66A5AD;
+    color: #003B46;
+    box-shadow: 0 0 5px #66A5AD, 0 0 15px #66A5AD, 0 0 25px #66A5AD, 0 0 50px #66A5AD;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke: none;
+}
+.button-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#register{
+    font-size: 14px;
+    text-decoration: none;
+    color: #CBBDDB;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+#register a {
+    margin:auto;
+    color: #8f7CEC;
+    text-decoration: none;
+}

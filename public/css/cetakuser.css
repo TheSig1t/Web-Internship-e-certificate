@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    background-color: #151f4f;
+    margin: 0;
+    padding: 0;
+}
+    .formcontent{
+        display: flex;
+        height: 540px;
+        width: 90%;
+        margin-left: 80px;
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        z-index: -3;
+    }
+    .formcontent img{
+        object-fit: fill;
+        height: 540px;
+        left: 0;
+        margin: auto;
+        /* margin-left: 50px; */
+    }
+.formcontent form{
+    top: 0;
+    right: 0;
+    margin: auto;
+    /* margin-top: 35px; */
+    /* margin-left: 130px; */
+}
+.formcontent form label{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: 24px;
+}
+.formcontent form input{
+    width: 350px;
+    height: 38px;
+    border: none;
+    outline: none;
+    background-color: #afafaf;
+    border-radius: 3px;
+    color: black;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.formcontent form button{
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    border: 1px solid #151f4f;
+    background-color: #151f4f;
+    margin-left: 68px;
+    padding: 10px 35px 10px 35px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+.formcontent form button:hover{
+    background-color: #fff;
+    color: #151f4f;
+    font-weight: bold;
+}
+.formcontent form button i{
+    transition: .03s ease-in;
+    margin-right: 6px;
+}
+
+/* Menu select option */
+.dropdown{
+    position: relative;
+    margin: 10px 0 30px;
+    width: 360px;
+    /* border-bottom: 1px solid #000;
+    border-radius: 4px; */
+}
+
+/* .dropdown label{
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-150%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .7s;
+} */
+
+.dropdown select{
+    width: 360px;
+    height: 36px;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 30px 0 2px;
+    background: #afafaf;
+    font-family: 'Noto Sans', sans-serif;
+}
+  
+  
+
+@media screen and (max-width:1020px){
+    .formcontent{
+        display: flex;
+        position: relative;
+        top: 20px;
+        margin: auto;
+    }
+    .formcontent #image{
+        /* position: absolute; */
+        display: none;
+    }
+    
+}

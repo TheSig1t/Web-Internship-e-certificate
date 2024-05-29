@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151f4f;
+}
+.container{
+    /* display: flex; */
+    width: 95%;
+    min-height: auto;
+    max-height: none;
+    margin-left: 33px;
+    margin-top: 35px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.container table{
+    width: 100%;
+    max-height: 500px;
+    border-collapse:collapse;
+}
+.container table th{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+    padding: 13px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.container table td{
+    /* padding: 10px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-right: 2px solid black;
+    font-family: 'Noto sans', sans-serif;
+    font-size: 17px;
+    /* border-bottom: 2px solid black; */
+}
+.container table td button{
+    margin-left: -23px;
+    padding: 7px 14px 7px 14px;
+    border: 1px solid #151f4f;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #151f4f;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container table td button:hover{
+    color: #151f4f;
+    background-color: #fff;
+    font-weight: bold;
+}
+.container table td button i{
+    margin-right: 6px;
+    transition: 0.4s ease-in;
+}

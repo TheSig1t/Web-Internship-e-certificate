@@ -1,0 +1,140 @@
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,300&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151f4f;
+    overflow: hidden;
+}
+
+/* .container{
+    position: relative;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+} */
+.containercontent{
+    display: flex;
+    background: transparent;
+    width: 100%;
+    min-height: 576px;
+    max-height: auto;
+}
+
+.containercontent label{
+    /* margin-left: 95px;
+    margin-right: 70px;
+    margin-top: 90px; */
+    font-size: 5vw;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+}
+.containercontent ul{
+    /* display: flex; */
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 95px;
+    background: transparent;
+}
+.containercontent ul li{
+    margin-bottom: 28px;
+    /* margin-right: 500px; */
+}
+
+.containercontent p{
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: 'poppins',sans-serif;
+    /* position: absolute;
+    margin-left: 95px;
+    margin-top: 200px; */
+    /* margin-right: 50px; */
+}
+.containercontent img{
+    display:flex;
+    margin-left: 53%;
+    height: 575px;
+    /* background-repeat: no-repeat;
+    background-position: right center; */
+    /* align-items:center ; */
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    /* position: static; */
+    /* margin-top: 5%; */
+}
+
+/* button{
+    font-size: 0.9em;
+    font-weight:bold;
+    font-family: 'Titillium Web', sans-serif;
+    border: 1px solid white;
+    background-color: #151f4f;
+    border-radius:30px;
+    color: white;
+    transition: ease 0.7s;
+}
+button:hover{
+    background-color: white;
+    color:  #151f4f;
+    
+} */
+@media screen and (max-width:858px){
+    .containercontent ul{
+        z-index: -3;
+    }
+    .containercontent #image{
+        position:absolute;
+        margin-top: 200px;
+        right: 0;
+        margin-left: -100px;
+        margin-right: 55px;
+        height: 65vw;
+        z-index: -4;
+    }
+    .containercontent label{
+        position: fixed;
+        left: 160px;
+        margin-top: -20px;
+        font-size: 4vw;
+        /* right: 0; */
+        /* margin-left: 850px; */
+        /* margin-right: -270px; */
+    }
+    .containercontent p{
+        position: fixed;
+        left: 60px;
+        margin-top: 0px;
+        font-size: 2vw;
+        text-align: center;
+    }
+}
+/* MEDIA HP BERUKURAN 576PX */
+@media screen and (max-width:576px){
+    .containercontent ul{
+        z-index: -3;
+    }
+    .containercontent #image{
+        margin-top: 200px;
+        left: 175px;
+        z-index: -4;
+    }
+    .containercontent label{
+        position: fixed;
+        left: 140px;
+        margin-top: -20px;
+    }
+    .containercontent p{
+        position: fixed;
+        left: 56px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+}
